@@ -1,3 +1,15 @@
+eta-touchdrv (0.3.0) stable; urgency=medium
+
+  [ Ali Rıza KESKİN ]
+  * fix for 5.10
+  * remove unused deps
+  * better code legibility
+  * Update OtdDrv.c
+  * better code legibility
+  * Fix device register issue
+
+ -- Fatih Altun <fatih.altun@pardus.org.tr>  Thu, 20 Oct 2022 16:40:48 +0300
+
 eta-touchdrv (0.2.0) stable; urgency=medium
 
   * Update driver for Etap 19
