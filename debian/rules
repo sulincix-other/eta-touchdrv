@@ -10,8 +10,8 @@ override_dh_install:
 	dh_install touch2/opticServer/OpticalService touch2/calibrationTools/calibrationTools usr/bin/
 	chmod 744 debian/eta-touchdrv/usr/bin/OpticalService debian/eta-touchdrv/usr/bin/calibrationTools
 	dh_install touch4/kernel/Makefile touch4/kernel/OtdDrv.c touch4/kernel/OtdDrv.h usr/src/eta-touchdrv-$(VERSION)/touch4/
-	dh_install touch4/otdServer/OtdTouchServer touch4/calibration/OtdCalibrationTool usr/bin/
-	chmod 744 debian/eta-touchdrv/usr/bin/OtdTouchServer debian/eta-touchdrv/usr/bin/OtdCalibrationTool
+	dh_install touch4/otdServer/OtdTouchServer.$(shell uname -m) touch4/calibration/OtdCalibrationTool usr/bin/
+	chmod 744 debian/eta-touchdrv/usr/bin/OtdTouchServer.$(shell uname -m) debian/eta-touchdrv/usr/bin/OtdCalibrationTool
 	dh_install touchdrv_install usr/bin
 	chmod 744 debian/eta-touchdrv/usr/bin/touchdrv_install
 
